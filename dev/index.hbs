@@ -2,15 +2,17 @@
 
 <div class="v-center">
     <div class="v-wrapper">
-        <div class="description">
-            <h1>{{@blog.description}}</h1>
-        </div>
+        {{#is "home"}}
+            <div class="description">
+                <h1>{{@blog.description}}</h1>
+            </div>
 
-        {{> menu}}
+            {{> menu}}
 
-        <div class="scroll-down">
-            scroll down<span class="ion-arrow-down-c"></span>
-        </div>
+            <div class="scroll-down">
+                scroll down<span class="ion-arrow-down-c"></span>
+            </div>
+        {{/is}}
     </div>
 </div>
 
